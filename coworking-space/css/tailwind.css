@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.to-animate {
+		@apply opacity-0 duration-1000 ease-in-out transition-all;
+	}
+	.animated {
+		@apply opacity-100 translate-x-0 translate-y-0 scale-100 rotate-0;
+	}
+	.hover-scale {
+		/* @apply hover:scale-105 transition-transform ease-in-out delay-100 */
+		/* @apply hover:animate-scale transition-transform; */
+	}
+	/**wp the_content classes override**/
+	.aligncenter {
+		@apply m-auto mb-4;
+	}
+	.alignright {
+		@apply ml-auto mr-auto md:float-right md:ml-6 md:mr-0 clear-both mb-4;
+	}
+	
+	.alignleft {
+		@apply ml-auto mr-auto md:float-left md:ml-0 md:mr-6 clear-both mb-4;
+	}
+	
+	.wp-caption.aligncenter, .gallery-caption {
+		@apply text-center;
+	}
+	
+	.wp-caption.aligncenter img {
+		@apply w-full;
+	}
+
+	.wp-caption-text {
+		@apply text-sm;
+	}
+	.gallery.gallery-columns-4 {
+		@apply grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-10;
+	}
+	.gallery.gallery-columns-3 {
+		@apply grid grid-flow-row md:grid-cols-3 gap-10;
+	}
+	.gallery.gallery-columns-2 {
+		@apply grid grid-flow-row md:grid-cols-2 gap-10;
+	}
+	.gallery-item img {
+		@apply mx-auto mb-3;
+	}
+}
+* {
+	/* scrollbar-width: thin; */
+	/* scrollbar-color: var(--secondary) var(--primary); */
+}
+html {
+	@apply scroll-smooth;
+	font-family: 'PT Serif', 'serif';
+	@apply selection:bg-golden-grass-400 selection:text-black
+}
+.to-animate, .animate-fill-box {
+	transform-box: fill-box;
+}
+
+.menu-item.dropdown:hover .dropdown-menu {
+	display: block;
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+	@apply bg-golden-grass-400;
+  }
+  

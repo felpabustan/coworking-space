@@ -1,0 +1,17 @@
+/*
+Theme Name: Intellidesk Theme by Gi-yo
+Theme URI: http://www.intellidesk.com/
+Author: Gi-yo
+Author URI: http://www.intellidesk.com/
+Description: N/A
+Version: 1.0
+Tags: intellidesk
+Text Domain: intellidesk
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.page-id-7 #headerMain, .page-id-7 #footerMain {
+    display: none;
+}

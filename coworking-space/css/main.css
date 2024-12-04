@@ -1,0 +1,154 @@
+/*main menu*/
+@media screen and (min-width: 1024px) {
+    /*menu desktop*/
+    .menu-item {
+        position: relative;
+    }
+  
+    .menu-item a {
+        padding: 5px;
+        /* width: 100%;
+        display: flex; */
+        text-decoration: none;
+    }
+  
+    .menu-item a:hover {
+      color: #e1ad21;
+    }
+  
+    .menu-item .sub-menu {    
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: inherit;
+        padding: 0;
+        z-index: 300;
+        text-align: left;
+        background-color: #fff;
+        color: #000000;
+    }
+  
+    .sub-menu .menu-item {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+  
+    .menu-item:hover > .sub-menu {    
+        opacity: 1;
+        visibility: visible;
+    }
+  
+    #MainNav > .menu-item {
+      padding: 10px 5px;
+    }
+  
+    #MainNav ul.sub-menu {
+        text-transform: capitalize;
+        width: 170%;
+        margin-top: .65rem;
+        margin-left: -12%;
+        border-radius: 4%;
+        border-radius: .25rem;
+        font-weight: 500;
+        font-size: 0.75rem; 
+        line-height: 1rem;
+        padding: .50rem;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        box-shadow: 1px 1px 4px #a9a9a9;
+      
+        &:after {
+          content: '';
+          position: absolute;
+          border: 1px solid rgba(255, 255, 255, 0);
+        }
+  
+        &:before {
+          content: '';
+          position: absolute;
+          border: 1px solid #ffffff00;
+        }
+        
+        /*triangle side*/
+        /*top*/
+        &.top:after {
+          border-color: #fff transparent;
+          border-width: 0 10px 12px 10px;
+          top: -12px;
+          left: 15%;
+        }
+    }
+  
+    #MainNav ul.sub-menu ul.sub-menu {
+      top: 0;
+      left: 100%;
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+.button-top {
+    /* font-family: -webkit-pictograph; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    /* width: 40px; 
+    height: 40px; */
+    border: 0;
+    /* border-radius: 50px;
+    box-shadow: none;
+    font-size: 18px;
+    text-align: center; */
+    cursor: pointer;
+    transition: opacity .18s ease;
+    /* outline: none important; */
+}
+
+.button-top-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/**splide bug**/
+.splide__sr {
+    display: none;
+}
+
+/**wp**/
+.aligncenter {
+  margin: auto;
+}
+
+.alignright {
+  float: right;
+  clear: both;
+}
+
+.alignleft {
+  float: left;
+  clear: both;
+}
+
+.wp-caption.aligncenter {
+  text-align: center;
+}
+
+.wp-caption.aligncenter img {
+  width: 100%;
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1024px) { 	
+    .menu-item a {
+      padding: 10px 5px;		
+  }
+}

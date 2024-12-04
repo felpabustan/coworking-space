@@ -1,0 +1,30 @@
+<svg id="Main_-_Icon_" data-name="Main - Icon " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2037" height="1588" viewBox="0 0 2037 1588">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1ad21;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="606.375" y1="864" x2="606.375" y2="1536" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d6c32"/>
+      <stop offset="0.542" stop-color="#9d6c32" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="632" y2="30" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Logo">
+    <path id="LOGO-2" data-name="LOGO" class="cls-1" d="M492,632H39v904H720.75V864H1014v672h981V30H492V632ZM720.75,255V632H1245v670h519V255H720.75ZM264,864H492v438H264V864Z"/>
+    <g id="Shadow">
+      <rect class="cls-2" x="492" y="864" width="228.75" height="672"/>
+      <rect class="cls-3" x="492" y="30" width="228.75" height="602"/>
+    </g>
+  </g>
+</svg>
